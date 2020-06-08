@@ -5,19 +5,14 @@ import sys
 import time 
 import os
 
-def slowprint(s):
+def slowprint(s, t):
 	for c in s + '\n':
-		sys.stdout.write(c)
-		sys.stdout.flush()
-		time.sleep(7. /100)
-slowprint("\033[1;31m \033[91m [!] Starting MAC Changer...")
+		print(c, sep='', end='', flush=True)
+		time.sleep(t)
+
+slowprint("\033[1;31m \033[91m [!] Starting MAC Changer...", 0.07)
 time.sleep(3)
 os.system('clear')
-def slowprint(s):
-	for c in s + '\n':
-		sys.stdout.write(c)
-		sys.stdout.flush()
-		time.sleep(0. /100)
 slowprint(''' \033[1;31m \033[91m
                              _                                 
  _ __ ___   __ _  ___    ___| |__   __ _ _ __   __ _  ___ _ __ 
@@ -25,14 +20,9 @@ slowprint(''' \033[1;31m \033[91m
 | | | | | | (_| | (__  | (__| | | | (_| | | | | (_| |  __/ |   
 |_| |_| |_|\__,_|\___|  \___|_| |_|\__,_|_| |_|\__, |\___|_|   
                                                |___/           
-\033[97m ''')
+\033[97m ''', 0.0)
 
-def slowprint(s):
-	for c in s + '\n':
-		sys.stdout.write(c)
-		sys.stdout.flush()
-		time.sleep(3. /100)
-slowprint("\t\t \033[93m Coded By : Parshwa Bhavsar \033[97m")
+slowprint("\t\t \033[93m Coded By : Parshwa Bhavsar \033[97m", 0.03)
 
 
 def get_arguments():
