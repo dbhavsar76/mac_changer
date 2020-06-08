@@ -7,6 +7,16 @@ It is easy to use and user friendly.
 You have Python installed in your Linux.(Python 2)
 <img src="Capture.PNG">
 
+# Random MAC Addresses You can use 
+
+```
+07:6F:36:C7:F2:21
+4A:C8:05:52:54:D1
+3F:48:8F:6E:40:00
+80:53:8D:15:14:83
+0A:02:42:54:38:E2
+35:42:C4:CD:27:15
+```
 # Installation 
 
 ```
